@@ -5,10 +5,10 @@ import undo from '../../asserts/undo.png'
 import redo from '../../asserts/redo.png'
 import timer from '../../asserts/timer.png'
 import close from '../../asserts/close.png'
-import downArrow from '../../asserts/down-arrow.png'
 import VideoThumbnailComponent from '../VideoThumbnail/VideoThumbnailComponent';
 import DropDownComponent from '../DropDown/DropDownComponent';
 import ModalComponent from '../Modal/ModalComponent';
+import PropertyComponent from '../Property/PropertyComponent';
 
 export class MenuBarComponent extends Component {
     constructor(props) {
@@ -18,9 +18,10 @@ export class MenuBarComponent extends Component {
             title: 'Vmaker Video Recording',
             isShowModal: false,
             isChecked: false,
-            isFileOpen: false
+            isFileOpen: false,
         }
     }
+
     render() {
         return (
             <>
@@ -76,6 +77,8 @@ export class MenuBarComponent extends Component {
                     <ModalComponent title={this.state.title} isFileOpen={this.state.isFileOpen} />
                 </div>
 
+                {/* Library section */}
+                <PropertyComponent />
             </>
         )
     }

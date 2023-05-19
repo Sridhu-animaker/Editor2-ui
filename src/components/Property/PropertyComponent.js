@@ -8,6 +8,7 @@ import leftArrow from '../../asserts/left-arrow.png'
 
 function PropertyComponent() {
     const [isExpand, setIsExpand] = useState(false);
+    const [volume, setVolume] = useState(0)
 
     const toggleMenu = () => {
         setIsExpand(!isExpand);
@@ -19,37 +20,31 @@ function PropertyComponent() {
                     <div className={`leftSec ${isExpand ? 'expand' : ''}`}>
                         <div className="menu">
                             <ul>
-                                <li>
-                                    <a href="#" onClick={toggleMenu}>
-                                        <img src={property} alt="Properties" width="22px" height="22px" />
-                                        <small>Properties</small>
-                                    </a>
+                                <li onClick={toggleMenu}>
+                                    <img src={property} alt="Properties" width="22px" height="22px" />
+                                    <small>Properties</small>
                                 </li>
-                                <li>
-                                    <a href="#" onClick={toggleMenu}>
-                                        <img src={uploadImg} alt="Uploads" width="22px" height="22px" />
-                                        <small>Uploads</small>
-                                    </a>
+                                <li onClick={toggleMenu}>
+                                    <img src={uploadImg} alt="Uploads" width="22px" height="22px" />
+                                    <small>Uploads</small>
                                 </li>
-                                <li>
-                                    <a href="#" onClick={toggleMenu}>
-                                        <img src={subtitle} alt="Subtitle" width="22px" height="22px" />
-                                        <small>Subtitle</small>
-                                    </a>
+                                <li onClick={toggleMenu}>
+                                    <img src={subtitle} alt="Subtitle" width="22px" height="22px" />
+                                    <small>Subtitle</small>
                                 </li>
                             </ul>
                         </div>
                         <div className={`toggleSec ${isExpand ? 'active' : ''}`}>
                             <div className="toggleSecIn propertiesIn">
-                                <div className="myFiles d-inline-block w-100">
+                                <div className="myFiles d-inline-block w-fill">
                                     <span className="float-left">Audio</span>
                                 </div>
                                 <div className="rangSlider">
                                     <span>Volume</span>
-                                    <input type="text" value="0" />
-                                    <input type="range" min="0" max="100" onChange={() => { }} value="0" />
+                                    <input type="text" value={volume} />
+                                    <input type="range" min="0" max="100" onChange={(e) => { setVolume(e.target.value) }} value={volume} />
                                 </div>
-                                <div className="section d-inline-block w-100">
+                                <div className="section d-inline-block w-fill">
                                     <div className="float-left">
                                         <div className="checkbox-container" style={{ position: 'relative' }}>
                                             <input type="checkbox" className="checkbox-hidden" />
@@ -63,7 +58,7 @@ function PropertyComponent() {
                                         <p style={{ margin: 0 }}>Detach audio</p>
                                     </div>
                                 </div>
-                                <div className="speed d-inline-block w-100">
+                                <div className="speed d-inline-block w-fill">
                                     <span className="float-left">Speed</span>
                                     <span className="float-right">
                                         <select>
@@ -74,7 +69,7 @@ function PropertyComponent() {
                                     </span>
                                 </div>
                             </div>
-                            <span id="toggleClose" onClick={() => setIsExpand(false)}><img src={leftArrow} alt="arrow" width="12px" height="12px" /></span>
+                            <span id="toggleClose" onClick={() => setIsExpand(false)}><img src={leftArrow} alt="arrow" width="7px" height="12px" /></span>
                         </div>
                     </div>
 

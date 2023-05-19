@@ -70,11 +70,6 @@
     background-color: #F7F7F7;
 }
 
-.leftSec .subTitleWrapper>ul>li:hover .drop-down.float-right {
-    opacity: 1;
-    visibility: visible;
-}
-
 .rangSlider,
 .leftSec .section {
     padding: 0px 20px;
@@ -98,26 +93,10 @@
     left: 95px;
 }
 
-.versionHistory .toggleSec {
-    left: 0px;
-}
-
-/* active */
-.drop-down .selected a.active::after {
-    transform: rotate(226deg) translateY(-18%);
-}
-
 .leftSec .subTitleWrapper>ul>li:hover,
 .editable.active {
     background-color: #F7F7F7;
 }
-
-.multiDropDown .selected a.active,
-.multiDropDown .selected a:hover,
-.myFiles .drop-down>a:hover {
-    background-color: #ECEFF1;
-}
-
 
 .customizeWrapper li:hover,
 .customizeWrapper li.active {
@@ -133,10 +112,6 @@
 .toggleSecIn.subTitleTab {
     padding: 20px 0px;
     overflow: unset;
-}
-
-.versionHistory .toggleSecIn {
-    padding: 0px;
 }
 
 .propertiesIn {
@@ -214,40 +189,6 @@
     font-weight: 600;
 }
 
-.subTitleTab .myFiles .drop-down {
-    min-width: auto;
-    float: left;
-}
-
-.subTitleTab .myFiles .selected a,
-.subTitleWrapper .drop-down.float-right .selected a {
-    padding: 0px;
-    vertical-align: middle;
-    margin: 0px 0px 0px 20px;
-}
-
-.multiDropDown .selected a,
-.myFiles>.drop-down>a {
-    padding: 10px !important;
-    margin-left: 10px !important;
-    border-radius: 4px !important;
-}
-
-.myFiles .drop-down>a {
-    line-height: 1;
-    display: inline-block;
-    position: relative;
-    top: -7px;
-    border-radius: 4px;
-    padding: 7px;
-}
-
-.multiDropDown .selected a.active,
-.multiDropDown .selected a:hover,
-.myFiles .drop-down>a:hover {
-    background-color: #ECEFF1;
-}
-
 .myFiles .options li a {
     margin-left: 0px;
 }
@@ -255,11 +196,6 @@
 .customizeTab .myFiles {
     padding-bottom: 15px;
 }
-
-.versionHistory .myFiles {
-    padding: 10px 20px 3px;
-}
-
 
 .rangSlider span {
     float: left;
