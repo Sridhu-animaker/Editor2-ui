@@ -14,12 +14,6 @@
     height: calc(100vh - 150px);
 }
 
-.popup-footer .btn-grt:hover,
-.properties .btn:hover,
-.btn-grt:hover {
-    background: transparent linear-gradient(90deg, #63D6B5 0%, #08B3E5 100%) 0% 0%;
-}
-
 .properties ul.monthEntries li {
     cursor: pointer;
     text-align: left;
@@ -32,7 +26,6 @@
     border-bottom: 1px solid #ECECEC;
     padding: 15px 20px;
 }
-
 
 .leftSec {
     position: relative;
@@ -131,7 +124,6 @@
     border-color: #FDC100;
 }
 
-/* toggleSecIn */
 .toggleSecIn {
     overflow-y: auto;
     height: 100%;
@@ -146,8 +138,6 @@
 .versionHistory .toggleSecIn {
     padding: 0px;
 }
-
-/* propertiesIn */
 
 .propertiesIn {
     padding: 0px;
@@ -189,11 +179,8 @@
     line-height: 3.1;
 }
 
-/* myFiles */
-
 .myFiles {
     display: inline-block;
-    width: 100%;
     margin: 10px 0 8px;
 }
 
@@ -273,7 +260,6 @@
     padding: 10px 20px 3px;
 }
 
-/* rangSlider */
 
 .rangSlider span {
     float: left;
@@ -309,8 +295,6 @@
     flex-direction: column-reverse;
 }
 
-/* checkbox-container */
-
 .checkbox-container .checbox-svg {
     fill: none;
     stroke: white;
@@ -325,8 +309,6 @@
 .myFolder:hover .checkbox-container {
     display: block;
 }
-
-/* checkbox-hidden */
 
 .checkbox-hidden {
     height: 1px;
@@ -352,8 +334,6 @@ input[type=checkbox].checkbox-hidden:checked+div.checkbox-custom {
     display: block;
 }
 
-/* checkbox-custom */
-
 .checkbox-custom {
     display: inline-block !important;
     width: 18px;
@@ -364,8 +344,6 @@ input[type=checkbox].checkbox-hidden:checked+div.checkbox-custom {
     box-shadow: 0px 0px 4px #ddd;
 }
 
-
-/* toggleClose */
 
 #toggleClose {
     position: absolute;
@@ -381,8 +359,6 @@ input[type=checkbox].checkbox-hidden:checked+div.checkbox-custom {
     cursor: pointer;
     text-align: center;
 }
-
-/* centerSec */
 
 .centerSec {
     flex: 0 0 auto;
@@ -409,8 +385,6 @@ input[type=checkbox].checkbox-hidden:checked+div.checkbox-custom {
     padding: 10px;
 }
 
-
-/* rightSec */
 .rightSec {
     flex: 1 1 auto;
     display: none;
@@ -419,7 +393,6 @@ input[type=checkbox].checkbox-hidden:checked+div.checkbox-custom {
     box-shadow: 0px 0px 5px #ddd;
 }
 
-/* bottomSec */
 .bottomSec {
     background-color: #fff;
     width: 100%;
@@ -429,4 +402,8 @@ input[type=checkbox].checkbox-hidden:checked+div.checkbox-custom {
 
 .bottomSec.active {
     min-height: 150px;
+}
+
+.w-fill {
+    width: -webkit-fill-available;
 }
