@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.menubar-container {
+    width: 100%;
+    height: 48px;
+    background: transparent linear-gradient(270deg, #08B3E5 0%, #63D6B5 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    margin-left: 16px;
+    margin-right: 9px;
+    width: 40px;
+    height: 40px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.span-divider {
+    width: 1px;
+    height: 18px;
+    background: #0F7187 0% 0% no-repeat padding-box;
+    opacity: 0.45;
+}
+
+input[type="text"] {
+    width: 186px;
+    height: 21px;
+    margin-left: 16px;
+    text-align: left;
+    font: normal normal 600 15px/23px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    opacity: 1;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.button {
+    font-family: 'poppins';
+    padding: 16px;
+    text-align: left;
+    font: normal normal normal 13px/20px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.export-btn {
+    width: 90px;
+    height: 30px;
+    margin: 9px 16px;
+    cursor: pointer;
+    background: #FF9536 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.export-btn:hover {
+    transform: scale(1.05);
+}
+
+.para {
+    /* font: italic normal medium 7px/10px Poppins; */
+    font-style: Italic;
+    font-weight: 500;
+    font-size: 7px;
+    color: #FFFFFF;
+    opacity: 1;
+    user-select: none;
+}
+
+.undo-icon {
+    height: 15px;
+    width: 15px;
+    padding: 8px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.redo-icon {
+    height: 15px;
+    width: 15px;
+    padding: 8px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.timer-icon {
+    height: 18px;
+    width: 18px;
+    padding: 6px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.modal {
+    position: relative;
+    margin-right: 8px;
+    padding: 16px 0px;
+    width: 298px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 12px 26px #0000003D;
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.popUphead span {
+    font-weight: 600;
+    font-size: 18px;
+    color: #46445D;
+    padding: 0px 16px;
+}
+
+.close-btn {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.resolution {
+    height: 84px;
+    padding: 8px 16px;
+    color: #46445D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E4EAEB;
+}
+
+.thumbnail {
+    height: 177px;
+    padding: 16px;
+    overflow: hidden;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 0.97;
+}
+
+.thumbnail p {
+    color: #46445D;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.modal-btn {
+    width: 266px;
+    height: 36px;
+    margin: 16px 16px 0px 16px;
+    background: transparent linear-gradient(90deg, #08B3E5 0%, #63D6B5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    border: none;
+    position: absolute;
+    bottom: 16px;
+    font: normal normal 600 14px/14px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.modal-btn:hover {
+    transform: scale(1.02);
+}
+
+.modal-container {
+    height: 0px;
+    width: -webkit-fill-available;
+    z-index: 1;
+    position: absolute;
+    top: 43px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.transition-modal {
+    top: -5px;
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.modal-h {
+    height: 440px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}

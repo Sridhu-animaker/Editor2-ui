@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.videoSec {
+    height: 100%;
+    /* overflow: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.videoPreview {
+    display: inline-block;
+    width: fit-content;
+    overflow: hidden;
+    break-inside: avoid-column;
+    cursor: pointer;
+    position: relative;
+    transition: ease .5s;
+    height: fit-content;
+}
+
+.videoSec .videoPreview:hover {
+    transform: scale(1.04);
+}
+
+.thumbnail-img {
+    border-radius: 2px;
+    border: 1px solid #D6D6D6;
+    height: 69px;
+    width: 123px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.videoSec .videoPreview img:hover+.checkbox-container {
+    display: block;
+}
+
+.videoSec .videoPreview .checkbox-container {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    /* display: none; */
+}
+
+.videoSec .videoPreview .checkbox-container {
+    top: auto;
+    left: auto;
+    bottom: 5px;
+    right: 5px;
+}
+
+.videoPreview span {
+    color: #54536C;
+    font-size: 13px;
+    transition: ease .5s;
+}
+
+.videoPreview {
+    margin-bottom: 15px;
+    overflow: hidden;
+    break-inside: avoid-column;
+}
+
+.preview {
+    height: 69px;
+}
+
+.preview .checkbox-custom {
+    box-shadow: 00px 0px 4px #b5b5b5;
+}
+
+.checkbox-container .checbox-svg {
+    fill: none;
+    stroke: white;
+    stroke-width: 3px;
+    visibility: visible;
+}
+
+.checkbox-container.checked {
+    display: block !important;
+}
+
+.checkbox-container {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    /* display: none; */
+}
+
+.checkbox-hidden {
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+
+input[type=checkbox].checkbox-hidden:checked+div.checkbox-custom {
+    background-color: rgb(106, 193, 0);
+    display: block;
+}
+
+
+.modal input[type="checkbox"].checkbox-hidden:checked+div.checkbox-custom {
+    background-color: #FF9536;
+}
+
+.checkbox-custom {
+    display: inline-block !important;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: all 150ms;
+    box-shadow: 0px 0px 4px #ddd;
+}
+
+.checked-border {
+    border: 1px solid #FF9536 !important;
+}
+
+.dragDrop {
+    border-radius: 2px;
+    border: 1px solid #D6D6D6;
+    height: 100%;
+    width: 123px;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    background: #E4EAEB;
+    position: relative;
+}
+
+.dragDrop p {
+    color: #B0B2B4;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dragDrop p small {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.upload-img {
+    width: 25px;
+    margin: auto;
+    border: 0px
+}

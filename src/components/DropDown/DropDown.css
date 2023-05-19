@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.arrow {
+    padding-top: 10px;
+    width: '12px';
+    height: '7px';
+}
+
+.drop-down .selected a {
+    color: #46445D;
+    text-decoration: none;
+    position: relative;
+    padding: 11px 0px 0px 2px;
+    font: normal normal normal 14px/14px Poppins;
+}
+
+.drop-down .selected a.active::after {
+    transform: rotate(226deg) translateY(-18%);
+}
+
+.selected {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.headSec .drop-down {
+    width: 110px;
+    height: 36px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E4EAEB;
+    border-radius: 4px;
+}
+
+
+.headSec ul {
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #ddd;
+    width: 110px;
+    padding: 0px;
+    position: absolute;
+    z-index: 9;
+    margin-top: 5px;
+}
+
+.headSec ul.transForm {
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+.headSec ul a {
+    color: #46445D;
+    padding: 6px 7px;
+    display: inline-block;
+    width: 100%;
+    padding: 4px 13px;
+}
+
+.headSec ul li {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.headSec ul a:hover {
+    background: #e6e6e6;
+}

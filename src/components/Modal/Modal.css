@@ -1,0 +1,80 @@
+.file-modal {
+    left: 75px;
+    position: relative;
+    width: 298px;
+    height: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 1px 1px 5px #00000026;
+    /* box-shadow: 0px 12px 26px #0000003D; */
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    user-select: none;
+    opacity: 1;
+}
+
+.file-modal ul {
+    border-bottom: 1px solid #eaeef0;
+    padding: 8px 0;
+}
+
+.file-container {
+    padding: 16px 24px;
+    color: #424158;
+}
+
+.file-modal ul li {
+    color: #424158;
+    padding: 8px 24.42px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+}
+
+.small {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.file-modal li:hover {
+    background-color: #F2F3F7;
+    font-weight: bold;
+}
+
+.profile-pic {
+    width: 39px;
+    height: 39px;
+    border-radius: 2px;
+}
+
+.acc-details {
+    padding-left: 10px;
+}
+
+.name {
+    color: #424158;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.plan {
+    color: #A579F2;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: capitalize;
+    padding-top: 2.53px;
+}
+
+.h-line {
+    border-bottom: 1px solid #eaeef0;
+}
+
+.d-flex {
+    display: flex;
+}
