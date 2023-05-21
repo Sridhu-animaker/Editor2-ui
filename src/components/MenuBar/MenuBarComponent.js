@@ -35,7 +35,7 @@ export class MenuBarComponent extends Component {
                         <span className='span-divider'></span>
                         <div className='button'>Resize</div>
                         <span className='span-divider'></span>
-                        <input type='text' name='inputFieldName'
+                        <input type='text' name='inputFieldName' className='title-input'
                             value={this.state.title}
                             onChange={(e) => {
                                 this.setState({ title: e.target.value })

@@ -31,7 +31,7 @@
     opacity: 0.45;
 }
 
-input[type="text"] {
+.title-input {
     width: 186px;
     height: 21px;
     margin-left: 16px;
@@ -44,7 +44,7 @@ input[type="text"] {
     opacity: 1;
 }
 
-input:focus {
+.title-input:focus {
     outline: none;
     border: 1px solid #FFFFFF;
     border-radius: 4px;

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+} */
+
+.selected {
+    color: #FFFFFF;
+    padding: 9px 0px 0px 28px;
+    font: normal normal 600 13px/14px Poppins;
+}
+
+.drop-down .selected a.active::after {
+    transform: rotate(226deg) translateY(-18%);
+}
+
+.selected {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.drop-down {
+    width: 268px;
+    background: #7257D3 0% 0% no-repeat padding-box;
+    height: 36px;
+    border: 1px solid #E4EAEB;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+
+.options {
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #ddd;
+    width: 268px;
+    padding: 0px;
+    position: absolute;
+    z-index: 9;
+    margin-top: 12px;
+}
+
+.options.transForm {
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+.option-ul li {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px 12px;
+    height: 36px;
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #424156;
+    cursor: pointer;
+    vertical-align: text-bottom;
+}
+
+.option-ul li:hover {
+    background: #e6e6e6;
+    font: normal normal medium 14px/21px Poppins;
+}
