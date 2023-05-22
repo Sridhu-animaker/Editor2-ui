@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: -webkit-fill-available;
 }
 
 .drop-down {
@@ -29,7 +29,8 @@
     height: 36px;
     border: 1px solid #E4EAEB;
     border-radius: 4px;
-    margin-top: 8px;
+    margin: 8px 0px 12px 0px;
+    user-select: none;
 }
 
 

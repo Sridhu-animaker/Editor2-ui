@@ -8,6 +8,8 @@ import uploadImg from '../../asserts/upload-img.png'
 import subtitle from '../../asserts/subtitle.png'
 import leftArrow from '../../asserts/left-arrow.png'
 import search from '../../asserts/search.png'
+import fileImg from '../../asserts/file.png'
+import audioImg from '../../asserts/audio.png'
 import UploadDropDown from '../Common/UploadDropDown/UploadDropDown';
 
 
@@ -60,6 +62,18 @@ function MenuItems({ selectedMenu }) {
 }
 
 
+function AudioFile() {
+    return (
+        <div>
+            <div className='audio-file'>
+                <img src={audioImg} height='89px' width='89px' />
+            </div>
+            <p>filename.Mp3</p>
+        </div>
+    )
+}
+
+
 function PropertyComponent() {
     const [isExpand, setIsExpand] = useState(true);
     const [isSelectedMenu, setIsSelectedMenu] = useState({ isProperties: true, isUploads: false, isSubtitle: false })
@@ -107,6 +121,10 @@ function PropertyComponent() {
                                         <img src={property} width='20px' height='20px' />
                                     </div>
                                     <UploadDropDown />
+                                    <div className='my-files'>My files <img src={fileImg} width='22px' height='22px' /></div>
+                                    <div className='uploaded-files-container'>
+                                        <AudioFile />
+                                    </div>
                                 </div>
                             </div>
                             <span id="toggleClose" onClick={() => setIsExpand(false)}><img src={leftArrow} alt="arrow" width="7px" height="12px" /></span>

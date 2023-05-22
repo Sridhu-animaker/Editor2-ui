@@ -381,3 +381,52 @@ input[type=checkbox].checkbox-hidden:checked+div.checkbox-custom {
     color: #54536C;
     opacity: 0.44;
 }
+
+.search-input {
+    justify-content: space-around;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    border: 1px solid #E4EAEB;
+    border-radius: 4px;
+}
+
+.my-files {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    text-align: left;
+    font: normal normal 600 13px/14px Poppins;
+    letter-spacing: 0px;
+    color: #46445D;
+    user-select: none;
+}
+
+.uploaded-files-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.uploaded-files-container p {
+    text-align: left;
+    font: normal normal normal 13px/14px Poppins;
+    letter-spacing: 0px;
+    color: #54536C;
+    margin: 4px 0px 8px 0px;
+}
+
+/* Audio files component */
+.audio-file {
+    width: 126px;
+    height: 126px;
+    background: #8C5DE9 0% 0% no-repeat padding-box;
+    border: 1px solid #8C5DE9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ---------------------- */
