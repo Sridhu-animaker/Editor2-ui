@@ -6,17 +6,17 @@
     padding: 0px;
 } */
 
-.selected {
+.select {
     color: #FFFFFF;
     padding: 9px 0px 0px 28px;
     font: normal normal 600 13px/14px Poppins;
 }
 
-.drop-down .selected a.active::after {
+.drop-down .select a.active::after {
     transform: rotate(226deg) translateY(-18%);
 }
 
-.selected {
+.select {
     display: flex;
     justify-content: space-around;
     align-items: center;

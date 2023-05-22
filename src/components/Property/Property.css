@@ -408,6 +408,8 @@ input[type=checkbox].checkbox-hidden:checked+div.checkbox-custom {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 300px;
+    overflow: scroll;
 }
 
 .uploaded-files-container p {
@@ -429,4 +431,25 @@ input[type=checkbox].checkbox-hidden:checked+div.checkbox-custom {
     justify-content: center;
     align-items: center;
 }
+
 /* ---------------------- */
+
+.drag-drop-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    overflow: scroll;
+    color: #B0B2B4;
+
+}
+
+.drag-drop-container p {
+    font: normal normal 600 18px/14px Poppins;
+    margin: 16px 0px 8px 0px;
+}
+
+.drag-drop-container span {
+    font: normal normal medium 12px/14px Poppins;
+}

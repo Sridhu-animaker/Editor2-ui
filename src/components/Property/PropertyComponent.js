@@ -5,6 +5,7 @@ import propertySelect from '../../asserts/property-selected.png'
 import uploadSelect from '../../asserts/upload-select.png'
 import subtitleSelect from '../../asserts/subtitle-select.png'
 import uploadImg from '../../asserts/upload-img.png'
+import upload from '../../asserts/upload.png'
 import subtitle from '../../asserts/subtitle.png'
 import leftArrow from '../../asserts/left-arrow.png'
 import search from '../../asserts/search.png'
@@ -64,12 +65,14 @@ function MenuItems({ selectedMenu }) {
 
 function AudioFile() {
     return (
-        <div>
-            <div className='audio-file'>
-                <img src={audioImg} height='89px' width='89px' />
+        <>
+            <div>
+                <div className='audio-file'>
+                    <img src={audioImg} height='89px' width='89px' />
+                </div>
+                <p>filename.Mp3</p>
             </div>
-            <p>filename.Mp3</p>
-        </div>
+        </>
     )
 }
 
@@ -112,20 +115,27 @@ function PropertyComponent() {
                         </div>
                         <div className={`toggleSec ${isExpand ? 'active' : ''}`}>
                             <div className="toggleSecIn propertiesIn">
-                                {/* <MenuItems selectedMenu={isSelectedMenu} /> */}
+                                {isSelectedMenu.isProperties && <MenuItems selectedMenu={isSelectedMenu} />}
 
-                                <div className='upload-container'>
-                                    <div className='search-input'>
-                                        <img src={search} width='20px' height='20px' />
-                                        <input type='text' placeholder='Search Uploads' />
-                                        <img src={property} width='20px' height='20px' />
-                                    </div>
-                                    <UploadDropDown />
-                                    <div className='my-files'>My files <img src={fileImg} width='22px' height='22px' /></div>
-                                    <div className='uploaded-files-container'>
-                                        <AudioFile />
-                                    </div>
-                                </div>
+                                {isSelectedMenu.isUploads &&
+                                    <div className='upload-container'>
+                                        <div className='search-input'>
+                                            <img src={search} width='20px' height='20px' />
+                                            <input type='text' placeholder='Search Uploads' />
+                                            <img src={property} width='20px' height='20px' />
+                                        </div>
+                                        <UploadDropDown />
+                                        <div className='my-files'>My files <img src={fileImg} width='22px' height='22px' /></div>
+                                        <div className='drag-drop-container'>
+                                            <img src={upload} height='41px' width='41px' />
+                                            <p>Drag and Drop</p>
+                                            <small>Your file will be uploaded here</small>
+                                        </div>
+                                        <div className='uploaded-files-container'>
+                                            <AudioFile />
+                                        </div>
+                                    </div>}
+
                             </div>
                             <span id="toggleClose" onClick={() => setIsExpand(false)}><img src={leftArrow} alt="arrow" width="7px" height="12px" /></span>
                         </div>
